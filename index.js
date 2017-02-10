@@ -18,4 +18,4 @@ function onReq (req, res) {
   res.end();
 }
 
-http.createServer(onReq).listen(8000);
+app.listen(process.env.PORT || 3000)
